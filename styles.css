@@ -6,12 +6,16 @@ body {
 }
 h1 {
     text-align: center;
+    color: #FFFFFF;     
 }
 .screen {
     background-color: white;
     width: 100%;
     height: 150px;
     border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 #container {
     width: 320px;
@@ -38,4 +42,13 @@ h1 {
     margin-bottom: 14px;
     font-weight: bold;
     font-size: 17px;
+    border-radius: 10px;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #eeffa1;
+    opacity: 0.95;
+}
+.screen {
+    text-align: right;
 }

@@ -1,19 +1,25 @@
-function add(num) {
-    return num.reduce((a,b) => a + b, 0);
-}
-console.log(add([1,3,4,4,45]));
-function substract(num) {
-    return num.reduce((a,b) => a - b, 0);
+let previouseValue = "";
+let currentValue = "";
+
+const clear = document.querySelector("#clear");
+const deleteButton = document.querySelector("#delete");
+const equal = document.querySelector("#equal");
+const decimal = document.querySelector("#decimal");
+const currentScreen = document.querySelector(".currentScreen");
+const previousScreen = document.querySelector(".previousScreen");
+let numbers = document.querySelectorAll("#number");
+let operators = document.querySelectorAll("#operator");
+
+numbers.forEach(number => {
+    number.addEventListener("click", (e) => {
+        calNumber(e.target.defaultValue);
+        currentScreen.innerText = currentValue;
+
+    })
+})
+
+function calNumber (num) {
+    currentValue += num;
+    console.log(num);
 }
 
-function multiply(num) {
-    return num.reduce((a,b) => a * b);
-}
-
-function divide(num) {
-    return num.reduce((a,b) => a / b);
-}
-
-function operate(oparator) {
-
-}
