@@ -11,15 +11,15 @@ h1 {
 .screen {
     background-color: white;
     width: 100%;
-    height: 150px;
+    height: 130px;
     border-radius: 5px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: flex-end;
 }
 #container {
     width: 320px;
-    height: 500px;
+    height: 480px;
     margin: auto;
     background-color: black;
     border: 10px solid black;
@@ -41,7 +41,7 @@ h1 {
     height: 50px;
     margin-bottom: 14px;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 20px;
     border-radius: 10px;
 }
 .button:hover {
@@ -49,6 +49,9 @@ h1 {
     background-color: #eeffa1;
     opacity: 0.95;
 }
-.screen {
-    text-align: right;
+.currentScreen {
+    font-size: 30px;
+}
+.previousScreen {
+    font-size: 20px;
 }
